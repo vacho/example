@@ -1,0 +1,10 @@
+<?php
+use Drupal\example\Entity\Example;
+/**
+ * Menu argument loader. Returns an example entity
+ *
+ * @param $id
+ */
+function example_load($id) {
+  return Example::load($id);
+}

@@ -1,0 +1,28 @@
+example.list:
+  path: '/admin/config/system/example'
+  defaults:
+    _entity_list: 'example'
+    _title: 'Example Configuration'
+  requirements:
+    _permission: 'administer site configuration'
+example.add:
+  path: '/admin/config/system/example/add'
+  defaults:
+    _entity_form: 'example.add'
+    _title: 'Add example'
+  requirements:
+    _permission: 'administer site configuration'
+example.edit:
+  path: '/admin/config/system/example/{example}'
+  defaults:
+    _entity_form: 'example.edit'
+    _title: 'Edit example'
+  requirements:
+    _permission: 'administer site configuration'
+example.delete:
+  path: '/admin/config/system/example/{example}/delete'
+  defaults:
+    _entity_form: 'example.delete'
+    _title: 'Delete example'
+  requirements:
+    _permission: 'administer site configuration'
